@@ -1,16 +1,12 @@
 password = 'a123'
-x = 2
+x = 3 # 輸入機會次數
 while True:
-	password = input('please enter your password: ')
-	if password == 'a123':
+	pwd = input('please enter your password: ')
+	if pwd == password:
 		print('成功登入!')
 		break
-	elif x <= 0:
-		print('over')
-		break
-	elif password != 'a123' and x >= 2:
-		print('密碼錯誤, 還有2次機會')
+	else:
 		x = x - 1
-	elif password != 'a123' and x >= 1:
-		print('密碼錯誤, 還有1次機會')
-		x = x - 1 
+		print('密碼錯誤, 還有', x, '次機會')
+		if x == 0:
+			break
