@@ -13,5 +13,5 @@ while x > 0:
 		
 		if x == 1:
 			print('最後一次機會喔')
-		
-print('偷帳的?')
+if x == 0:		
+	print('偷帳的?')
